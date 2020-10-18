@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.GridLayout
+
+        android:id="@+id/gridlayout"
+        android:layout_width="365dp"
+        android:layout_height="330dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/board"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517">
+
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:cropToPadding="false"
+            android:onClick="dropin"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:onClick="dropin"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="88dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin"
+            android:tag="8" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView_winner"
+        android:layout_width="146dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="49dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_play_again"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="50dp"
+        android:onClick="play_again"
+        android:text="play_again"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
